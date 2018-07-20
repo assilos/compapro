@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Offers</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body background="rel/background.jpg">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Compa-Pro</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Products_FoodBeverage.php">Food and Beverages</a></li>
+          <li><a href="Products_Clothing.php">Clothing</a></li>
+          <li><a href="Products_HomeAppliance.php">Home Appliance</a></li>
+        </ul>
+      </li>
+      <li><a href="Offers.html">Offers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container"> 
+  <hr class="prettyline"><br>
+  <center>
+  <h1><b>Sorry</b></h1>
+  <h3>You need to sign up and get a premium account for this service</h3>
+  <br>
+  <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Sign up</button>
+  </center>
+  <br>
+    <hr class="prettyline">
+ </div>
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+    
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Alias:</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="username" class="input-medium" required="">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password:</label>
+              <div class="controls">
+                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="password" class="input-medium">
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="control-group">
+              <label class="control-label" for="rememberme"></label>
+              <div class="controls">
+                <label class="checkbox inline" for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  Remember me
+                </label>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">Email:</label>
+              <div class="controls">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="username@xyz.com" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Alias:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="username" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">Password:</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="password" class="input-large" required="">
+                <em>1-8 Characters</em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="password again." class="input-large" required="">
+              </div>
+            </div>
+     
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>About Us</h5>
+           <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>  Nowadays people are suffering from the inflation. The prices are getting higher and higher and it seems that people can’t find a good product for a price they’re willing to pay for it. Our website will help middle class and upper-middle class consumers familiar with technologies to save money and find the optimal product suitable for their budget. It also comes with multiple other options such as the commanding and the delivery of the chosen products, in order to make the whole grocery shopping experience easier, more fun and less costly.</a></li></ul></div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Our Services</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Comparing Prices</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Shopping For You</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Delivering</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Advertising</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Our Deals</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Our Partners</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Company A</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Company B</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Company C</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Company D</a></li>
+            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Company E</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </section>
+</body>
+</html>
